@@ -1,6 +1,6 @@
 # parametricilds
 
-### Description and copyright information
+## Description and copyright information
 
 Software for calculation of Interaural Level Differences (ILDs) in the horizontal plane via a set of parametric equations derived by fitting equations to the "self-consistent" smooth curves tabulated by Shaw and Vaillancourt (1985).
 
