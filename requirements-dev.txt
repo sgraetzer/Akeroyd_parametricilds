@@ -9,4 +9,3 @@ pdoc3
 flake8
 flake8-docstrings
 black
-logging
