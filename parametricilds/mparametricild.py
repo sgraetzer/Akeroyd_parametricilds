@@ -1,10 +1,6 @@
 import numpy as np
 import math
 from scipy.stats import norm
-import logging
-
-# NOT TO BE RELEASED
-# Used to generate ILD look up table
 
 
 def mparametricild(freq_hz, azimuth_degs):
@@ -227,7 +223,7 @@ def mparametricild(freq_hz, azimuth_degs):
     fivekhz = fivekhzmagnitude * norm.pdf(a_rads, fivekhzperturb_mu, fivekhzperturb_std)
 
     ild_db = float(primarysinusoid * asymmetry + dip + fivekhz)
-    logging.info(f"ILD = {ild_db}")
+    print(f"ILD = {ild_db}")
 
     return ild_db
 
