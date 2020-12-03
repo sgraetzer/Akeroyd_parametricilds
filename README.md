@@ -1,4 +1,7 @@
 # parametricilds
+
+### Description and copyright information
+
 Software for calculation of Interaural Level Differences (ILDs) in the horizontal plane via a set of parametric equations derived by fitting equations to the "self-consistent" smooth curves tabulated by Shaw and Vaillancourt (1985).
 
 Matlab code written by Michael A. Akeroyd, Hearing Sciences, Division of Clinical Neurosciences, School of Medicine, University of Nottingham, Nottingham, NG7 2RD, U.K. (Feb. 2020)
