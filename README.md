@@ -5,6 +5,8 @@ Matlab code written by Michael A. Akeroyd, Hearing Sciences, Division of Clinica
 
 Python translation: Simone Graetzer, Acoustics Research Centre, School of Science, Engineering and Environment, University of Salford, Salford, M5 4WT, UK (September 2020)
 
+### Reference
+
 Shaw, E.A.G. and Vaillancourt, M.M. (1985) “Transformation of sound‐pressure level from the free field to the eardrum presented in numerical form”, J. Acoust. Soc Am. 78:1120-1123. 
 
 ## Installation
