@@ -9,23 +9,28 @@ import tests.utils as utils
 # Test that python mparametricild code reproduces MATLAB outputs.
 # MATLAB inputs and outputs stored in mat files in data
 
-RTOL = 1e-05  # error tolerance for allclose check
-ATOL = 2e-05  # error tolerance for allclose check
+RTOL = 1e-09  # error tolerance for allclose check
+ATOL = 1e-09  # error tolerance for allclose check
 
 
 @pytest.mark.parametrize(
     "filename",
     [
-        "mparametricild-4b78a18a54ed.mat",
-        "mparametricild-9a193b8503bf.mat",
-        "mparametricild-863f4362da57.mat",
-        "mparametricild-154041fa2adb.mat",
-        "mparametricild-fbcf2712fde9.mat",
-        "mparametricild-1b43148541b2.mat",
-        "mparametricild-a91ba29514d3.mat",
-        "mparametricild-7d467e1eef26.mat",
-        "mparametricild-29ec3299dffb.mat",
-        "mparametricild-fd50596acdff.mat",
+        "mparametricild-00df49db8935",
+        "mparametricild-0a04d06b0a0d",
+        "mparametricild-0a40c425f9d4",
+        "mparametricild-0a29897d86e7",
+        "mparametricild-0aab2339558c",
+        "mparametricild-0b5a9339d246",
+        "mparametricild-0b89126fd4c6",
+        "mparametricild-0bd49e590d7c",
+        "mparametricild-0c81b2561595",
+        "mparametricild-0d20cc48f1ac",
+        "mparametricild-0e5e86e33f4e",
+        "mparametricild-0e28b1f110fd",
+        "mparametricild-0ea51bc8e0c3",
+        "mparametricild-0eaf75955bf5",
+        "mparametricild-0edba6f4ab3e",
     ],
 )
 def test_mparametricild(filename, regtest):

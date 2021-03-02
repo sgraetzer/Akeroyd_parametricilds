@@ -5,16 +5,19 @@ from scipy.stats import norm
 
 def mparametricild(freq_hz, azimuth_degs):
     """
-    Translation of Michael Akeroyd (MAA) and colleagues' MATLAB code for computing
-    interaural level differences based on frequency and azimuth in degrees.
-    MATLAB copyright MAA Feb 2020
+    Implements the parametric ILDs reported in "A set of equations for 
+    numerically calculating the interaural level difference in the horizontal plane."
+    Michael A Akeroyd, Jennifer Firth, Simone Graetzer and Samuel Smith
+     
+    CC-BY license
+    MAA, February 2021
 
     Args:
         freq_hz (float): frequency in Hz
         azimuth_degs (int): azimuth in degrees
 
     Returns:
-        ILD: interaural level difference
+        ild_db: interaural level difference
 
     """
     f_logkhz = np.log10(freq_hz / 1000)
@@ -22,85 +25,86 @@ def mparametricild(freq_hz, azimuth_degs):
 
     # parameters pasted from excel 20200402a
     mainparameters = np.zeros((5, 14))
+    
     mainparameters[0, :] = [
-        13.0621,
-        11.6956,
-        -4.0224,
-        0.6882,
-        0.2223,
-        2.8651,
-        0.2034,
-        0.3508,
-        -1.7716,
-        0.3034,
-        0.1137,
-        0.6188,
-        0.7882,
-        0.0489,
+        13.062,
+        11.696,
+        2.865,
+        0.203,
+        0.351,
+        -1.772,
+        0.303,
+        0.114,
+        -4.022,
+        0.688,
+        0.222,
+        0.619,
+        0.788,
+        0.049,
     ]
     mainparameters[1, :] = [
-        -0.5782,
-        0.5041,
-        -0.9590,
-        -0.6493,
-        0.3741,
-        -0.1439,
-        0.0345,
-        0.1678,
-        -0.0443,
-        0.2955,
-        0.0678,
-        0.0389,
-        0.6539,
-        0.0640,
+        -0.578,
+        0.504,
+        -0.959,
+        -0.649,
+        0.374,
+        -0.144,
+        0.035,
+        0.168,
+        -0.044,
+        0.295,
+        0.068,
+        0.039,
+        0.654,
+        0.064,
     ]
     mainparameters[2, :] = [
-        0.6466,
-        1.1185,
-        -9.0378,
-        1.3305,
-        0.2196,
-        -7.5159,
-        0.0522,
-        0.3522,
-        1.2418,
-        0.2660,
-        0.1070,
-        -0.1280,
-        0.5030,
-        0.0300,
+        0.647,
+        1.118,
+        -7.516,
+        0.052,
+        0.352,
+        1.242,
+        0.266,
+        0.107,
+        -0.128,
+        0.503,
+        0.030,
+        -9.038,
+        1.330,
+        0.220,
     ]
     mainparameters[3, :] = [
-        -0.2238,
-        1.6047,
-        -6.0000,
-        1.3402,
-        0.0300,
-        2.8675,
-        -1.0099,
-        0.1350,
-        -0.0405,
-        0.8272,
-        0.0300,
-        -0.0282,
-        0.4746,
-        0.0539,
+        -0.224,
+        1.605,
+        2.868,
+        -1.010,
+        0.135,
+        -0.028,
+        0.475,
+        0.054,
+        -0.041,
+        0.827,
+        0.030,
+        -6.000,
+        1.340,
+        0.030,
     ]
     mainparameters[4, :] = [
-        -0.0629,
-        0.3258,
-        -0.1153,
-        0.7487,
-        0.1261,
-        -0.0551,
-        0.2448,
-        0.0919,
-        0.0398,
-        -0.3022,
-        0.1494,
-        0.1600,
-        0.6487,
-        0.5839,
+        -0.063,
+        0.326,
+        0.040,
+        -0.302,
+        0.149,
+        -0.055,
+        0.245,
+        0.092,
+        0.160,
+        0.649,
+        0.584,
+        -0.115,
+        0.749,
+        0.126,
     ]
 
     fivekhzpertubationparameters = np.array([-0.2664, 0.7067, 0.0763, 2.7500, 0.2000])
