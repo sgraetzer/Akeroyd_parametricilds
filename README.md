@@ -8,6 +8,13 @@ Matlab code written by Michael A. Akeroyd, Hearing Sciences, Division of Clinica
 
 Python translation: Simone Graetzer, Acoustics Research Centre, School of Science, Engineering and Environment, University of Salford, Salford, M5 4WT, UK (September 2020, updated Feb. 2021)
 
+If you use this code in publications, please cite it as follows:
+
+```
+Details to appear. 
+```
+
+
 ### Reference
 
 Shaw, E.A.G. and Vaillancourt, M.M. (1985) “Transformation of sound‐pressure level from the free field to the eardrum presented in numerical form”, J. Acoust. Soc Am. 78:1120-1123. 
@@ -20,17 +27,6 @@ cd parametricilds
 # Set up python virtual environment
 python -m venv env
 source env/bin/activate
-pip install --upgrade pip
-pip install -r requirements-dev.txt
-```
-
-On a Windows system,
-```bash
-git clone https://github.com/sgraetzer/parametricilds
-cd parametricilds
-# Set up python virtual environment
-python -m venv env
-source env/Scripts/activate
 pip install --upgrade pip
 pip install -r requirements-dev.txt
 ```
