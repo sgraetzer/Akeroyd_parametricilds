@@ -22,7 +22,7 @@ Shaw, E.A.G. and Vaillancourt, M.M. (1985) “Transformation of sound‐pressure
 ## Installation
 
 ```bash
-git clone https://github.com/sgraetzer/parametricilds
+git clone https://github.com/sgraetzer/Akeroyd_parametricilds
 cd parametricilds
 # Set up python virtual environment
 python -m venv env
