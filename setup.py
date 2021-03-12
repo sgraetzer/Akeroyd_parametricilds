@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="parametricilds",
+    name="Akeroyd_parametricilds",
     version="0.0.1",
     author="Michael Akeroyd, Simone Graetzer, Jennifer Firth, and Samuel Smith",
     author_email="s.n.graetzer@salford.ac.uk",
     description="Interaural-level difference calculation",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/sgraetzer/parametricilds/",
+    url="https://github.com/sgraetzer/Akeroyd_parametricilds/",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
