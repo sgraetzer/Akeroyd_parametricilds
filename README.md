@@ -11,7 +11,8 @@ Python translation: Simone Graetzer, Acoustics Research Centre, School of Scienc
 If you use this code in publications, please cite it as follows:
 
 ```
-Details to appear. 
+Akeroyd, M. A., Firth, J., Graetzer, S., Smith, S., A set of equations for numerically calculating the interaural level difference in the horizontal plane, J. Acoust. Soc. Am. Express Lett. 1(4), 044402, https://doi.org/10.1121/10.0004261
+
 ```
 
 
